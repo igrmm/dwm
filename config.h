@@ -11,8 +11,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "monospace:size=12" };
+static const char dmenufont[]       = "monospace:size=12";
 
 /* DRACULA COLORS */
 static const char nbg[]             = "#21222c";
@@ -77,7 +77,7 @@ static const char *ssselecteditcmd[]  = { "screenshot", "selection-edit", NULL }
 static const char *ssselectioncmd[]  = { "screenshot", "selection", NULL };
 static const char *ssfullscreencmd[]  = { "screenshot", "fullscreen", NULL };
 static const char *powermenucmd[]  = { "powermenu", NULL };
-static const char *vifmcmd[]  = { "st", "-e", "vifmub", NULL };
+static const char *vifmcmd[]  = { "st", "-e", "vifm", NULL };
 static const char *raisevolcmd[]  = { "volume", "raise", NULL };
 static const char *lowervolcmd[]  = { "volume", "lower", NULL };
 static const char *mutevolcmd[]  = { "volume", "mute", NULL };
