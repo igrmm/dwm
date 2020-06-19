@@ -105,10 +105,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Print,  spawn,          {.v = ssselectioncmd } },
 	{ MODKEY|ShiftMask,             XK_Print,  spawn,          {.v = ssselecteditcmd } },
 	{ 0,                            XK_Print,  spawn,          {.v = ssfullscreencmd } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+//      { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+//	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+//	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+//	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
 	// Media key bindings
 	{ 0,                            XF86XK_AudioRaiseVolume,  spawn,          {.v = raisevolcmd } },
