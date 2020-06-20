@@ -83,7 +83,7 @@ static const char *raisevolcmd[]  = { "volume", "raise", NULL };
 static const char *lowervolcmd[]  = { "volume", "lower", NULL };
 static const char *mutevolcmd[]  = { "volume", "mute", NULL };
 static const char *maxvolcmd[]  = { "volume", "max", NULL };
-static const char *launchtelegramcmd[]  = { "launchtelegram", NULL };
+static const char *telegramcmd[]  = { "telegram-desktop", "floating", NULL };
 static const char *htopcmd[]  = { "st", "-e", "htop", NULL };
 static const char *joplincmd[]  = { "st", "-e", "joplin", NULL };
 static const char *refreshbarcmd[]  = { "dwmbar", NULL };
@@ -121,7 +121,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_w,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = vifmcmd } },
-	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = launchtelegramcmd } },
+	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = telegramcmd } },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
