@@ -90,7 +90,12 @@ static const char *joplincmd[]  = { "st", "-e", "joplin", NULL };
 static const char *refreshbarcmd[]  = { "dwmbar", NULL };
 
 /* commands spawned when clicking statusbar, the mouse button pressed is exported as BUTTON */
-static char *statuscmds[] = { "dwmbar TIMEDATE --click $BUTTON", NULL, NULL, NULL, NULL };
+/* order in statusbar: right to left */
+static char *statuscmds[] = {
+	NULL,
+	"dwmbar TIMEDATE --click $BUTTON",
+	NULL
+};
 static char *statuscmd[] = { "/bin/sh", "-c", NULL, NULL };
 
 static Key keys[] = {
